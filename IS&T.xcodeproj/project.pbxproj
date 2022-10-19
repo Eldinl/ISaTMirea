@@ -33,6 +33,7 @@
 		B31255C628EDDCC200AE8E5B /* KMeansModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMeansModels.swift; sourceTree = "<group>"; };
 		B31255C828EDE0BB00AE8E5B /* GetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetData.swift; sourceTree = "<group>"; };
 		B31255CB28EDE38A00AE8E5B /* DataSetKMeans.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DataSetKMeans.csv; sourceTree = "<group>"; };
+		B3BD1EA1290053C400AFBE13 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				B31255C828EDE0BB00AE8E5B /* GetData.swift */,
+				B3BD1EA1290053C400AFBE13 /* README.md */,
 				B31255CB28EDE38A00AE8E5B /* DataSetKMeans.csv */,
 			);
 			path = DataSets;
