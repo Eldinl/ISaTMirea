@@ -14,7 +14,7 @@ class KMeans {
     var teaAndCofe: [TeaAndCofeMap] = []
     
     func parseDataToModel() {
-        let data = GetData().getCSVData(filename: "/Users/leonid/Desktop/Интеллектуальные системы и технологии/IS&T/Task 1 - kMeans/DataSets/DataSetKMeans.csv")
+        let data = GetData().getCSVData(filename: "DataSetKMeans.csv")
         
         for row in data {
             let sleepHours = Double(row[0]) ?? 0
