@@ -12,6 +12,16 @@
 		B31255C728EDDCC200AE8E5B /* KMeansModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31255C628EDDCC200AE8E5B /* KMeansModels.swift */; };
 		B31255C928EDE0BB00AE8E5B /* GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31255C828EDE0BB00AE8E5B /* GetData.swift */; };
 		B31255CE28EDE79C00AE8E5B /* CSV in Frameworks */ = {isa = PBXBuildFile; productRef = B31255CD28EDE79C00AE8E5B /* CSV */; };
+		B3BE54CF292015C800181ABD /* SchellingModelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE54CE292015C800181ABD /* SchellingModelApp.swift */; };
+		B3BE54D1292015C800181ABD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE54D0292015C800181ABD /* ContentView.swift */; };
+		B3BE54D3292015C900181ABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3BE54D2292015C900181ABD /* Assets.xcassets */; };
+		B3BE54D6292015C900181ABD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3BE54D5292015C900181ABD /* Preview Assets.xcassets */; };
+		B3F64C9B2911A174007D114D /* VkGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F64C9A2911A174007D114D /* VkGraph.swift */; };
+		B3F64C9D2911A18A007D114D /* VkGraphModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F64C9C2911A18A007D114D /* VkGraphModels.swift */; };
+		B3F64CA02911A221007D114D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B3F64C9F2911A221007D114D /* Alamofire */; };
+		B3F64CA22911A244007D114D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F64CA12911A244007D114D /* NetworkService.swift */; };
+		B3F64CA42911A2D6007D114D /* NetworkModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F64CA32911A2D6007D114D /* NetworkModels.swift */; };
+		B3F64CA62912AAB9007D114D /* GraphModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F64CA52912AAB9007D114D /* GraphModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +44,17 @@
 		B31255C828EDE0BB00AE8E5B /* GetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetData.swift; sourceTree = "<group>"; };
 		B31255CB28EDE38A00AE8E5B /* DataSetKMeans.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DataSetKMeans.csv; sourceTree = "<group>"; };
 		B3BD1EA1290053C400AFBE13 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		B3BE54CC292015C800181ABD /* Task 3 - Schelling's model.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Task 3 - Schelling's model.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3BE54CE292015C800181ABD /* SchellingModelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchellingModelApp.swift; sourceTree = "<group>"; };
+		B3BE54D0292015C800181ABD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B3BE54D2292015C900181ABD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3BE54D5292015C900181ABD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B3BE54D7292015C900181ABD /* Task_3___Schelling_s_model.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Task_3___Schelling_s_model.entitlements"; sourceTree = "<group>"; };
+		B3F64C9A2911A174007D114D /* VkGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkGraph.swift; sourceTree = "<group>"; };
+		B3F64C9C2911A18A007D114D /* VkGraphModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkGraphModels.swift; sourceTree = "<group>"; };
+		B3F64CA12911A244007D114D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B3F64CA32911A2D6007D114D /* NetworkModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModels.swift; sourceTree = "<group>"; };
+		B3F64CA52912AAB9007D114D /* GraphModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +63,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B31255CE28EDE79C00AE8E5B /* CSV in Frameworks */,
+				B3F64CA02911A221007D114D /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3BE54C9292015C800181ABD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +80,10 @@
 		B304E32928DB65590022CC84 = {
 			isa = PBXGroup;
 			children = (
+				B3F64C982911A123007D114D /* Task 2 - vkGraph */,
 				B3BD1EA02900413D00AFBE13 /* Task 1 - kMeans */,
 				B304E33428DB65590022CC84 /* IS&T */,
+				B3BE54CD292015C800181ABD /* Task 3 - Schelling's model */,
 				B304E33328DB65590022CC84 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				B304E33228DB65590022CC84 /* IS&T */,
+				B3BE54CC292015C800181ABD /* Task 3 - Schelling's model.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +133,38 @@
 			path = "Task 1 - kMeans";
 			sourceTree = "<group>";
 		};
+		B3BE54CD292015C800181ABD /* Task 3 - Schelling's model */ = {
+			isa = PBXGroup;
+			children = (
+				B3BE54CE292015C800181ABD /* SchellingModelApp.swift */,
+				B3BE54D0292015C800181ABD /* ContentView.swift */,
+				B3BE54D2292015C900181ABD /* Assets.xcassets */,
+				B3BE54D7292015C900181ABD /* Task_3___Schelling_s_model.entitlements */,
+				B3BE54D4292015C900181ABD /* Preview Content */,
+			);
+			path = "Task 3 - Schelling's model";
+			sourceTree = "<group>";
+		};
+		B3BE54D4292015C900181ABD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B3BE54D5292015C900181ABD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B3F64C982911A123007D114D /* Task 2 - vkGraph */ = {
+			isa = PBXGroup;
+			children = (
+				B3F64C9A2911A174007D114D /* VkGraph.swift */,
+				B3F64C9C2911A18A007D114D /* VkGraphModels.swift */,
+				B3F64CA52912AAB9007D114D /* GraphModel.swift */,
+				B3F64CA12911A244007D114D /* NetworkService.swift */,
+				B3F64CA32911A2D6007D114D /* NetworkModels.swift */,
+			);
+			path = "Task 2 - vkGraph";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,10 +183,28 @@
 			name = "IS&T";
 			packageProductDependencies = (
 				B31255CD28EDE79C00AE8E5B /* CSV */,
+				B3F64C9F2911A221007D114D /* Alamofire */,
 			);
 			productName = "IS&T";
 			productReference = B304E33228DB65590022CC84 /* IS&T */;
 			productType = "com.apple.product-type.tool";
+		};
+		B3BE54CB292015C800181ABD /* Task 3 - Schelling's model */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3BE54D8292015C900181ABD /* Build configuration list for PBXNativeTarget "Task 3 - Schelling's model" */;
+			buildPhases = (
+				B3BE54C8292015C800181ABD /* Sources */,
+				B3BE54C9292015C800181ABD /* Frameworks */,
+				B3BE54CA292015C800181ABD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Task 3 - Schelling's model";
+			productName = "Task 3 - Schelling's model";
+			productReference = B3BE54CC292015C800181ABD /* Task 3 - Schelling's model.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -131,11 +213,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					B304E33128DB65590022CC84 = {
 						CreatedOnToolsVersion = 14.0;
+					};
+					B3BE54CB292015C800181ABD = {
+						CreatedOnToolsVersion = 14.1;
 					};
 				};
 			};
@@ -150,15 +235,29 @@
 			mainGroup = B304E32928DB65590022CC84;
 			packageReferences = (
 				B31255CC28EDE79C00AE8E5B /* XCRemoteSwiftPackageReference "CSV.swift" */,
+				B3F64C9E2911A221007D114D /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = B304E33328DB65590022CC84 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				B304E33128DB65590022CC84 /* IS&T */,
+				B3BE54CB292015C800181ABD /* Task 3 - Schelling's model */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3BE54CA292015C800181ABD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3BE54D6292015C900181ABD /* Preview Assets.xcassets in Resources */,
+				B3BE54D3292015C900181ABD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B304E32E28DB65590022CC84 /* Sources */ = {
@@ -168,7 +267,21 @@
 				B31255C428EDDC9200AE8E5B /* KMeans.swift in Sources */,
 				B31255C728EDDCC200AE8E5B /* KMeansModels.swift in Sources */,
 				B31255C928EDE0BB00AE8E5B /* GetData.swift in Sources */,
+				B3F64C9B2911A174007D114D /* VkGraph.swift in Sources */,
+				B3F64CA42911A2D6007D114D /* NetworkModels.swift in Sources */,
 				B304E33628DB65590022CC84 /* main.swift in Sources */,
+				B3F64C9D2911A18A007D114D /* VkGraphModels.swift in Sources */,
+				B3F64CA22911A244007D114D /* NetworkService.swift in Sources */,
+				B3F64CA62912AAB9007D114D /* GraphModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3BE54C8292015C800181ABD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3BE54D1292015C800181ABD /* ContentView.swift in Sources */,
+				B3BE54CF292015C800181ABD /* SchellingModelApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +321,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -268,6 +382,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -291,7 +406,10 @@
 		B304E33A28DB65590022CC84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -300,8 +418,63 @@
 		B304E33B28DB65590022CC84 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B3BE54D9292015C900181ABD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Task 3 - Schelling's model/Task_3___Schelling_s_model.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Task 3 - Schelling's model/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "TM2D.Task-3---Schelling-s-model";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B3BE54DA292015C900181ABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Task 3 - Schelling's model/Task_3___Schelling_s_model.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Task 3 - Schelling's model/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "TM2D.Task-3---Schelling-s-model";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -327,6 +500,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		B3BE54D8292015C900181ABD /* Build configuration list for PBXNativeTarget "Task 3 - Schelling's model" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3BE54D9292015C900181ABD /* Debug */,
+				B3BE54DA292015C900181ABD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -338,6 +520,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		B3F64C9E2911A221007D114D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -345,6 +535,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B31255CC28EDE79C00AE8E5B /* XCRemoteSwiftPackageReference "CSV.swift" */;
 			productName = CSV;
+		};
+		B3F64C9F2911A221007D114D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3F64C9E2911A221007D114D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

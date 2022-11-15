@@ -14,7 +14,7 @@ class KMeans {
     var teaAndCofe: [TeaAndCofeMap] = []
     
     func parseDataToModel() {
-        let data = GetData().getCSVData(filename: "DataSetKMeans.csv")
+        let data = GetData().getCSVData(filename: "IS&T/Task 1 - kMeans/DataSets/DataSetKMeans.csv")
         
         for row in data {
             let sleepHours = Double(row[0]) ?? 0
@@ -54,7 +54,7 @@ class KMeans {
         let kMeansNeedNumber: Int = 10
         var teaVotes: Int = 0
         var cofeVotes: Int = 0
-        var teaAndCofeSort = teaAndCofe.sorted(by: {$0.distanse < $1.distanse})
+        let teaAndCofeSort = teaAndCofe.sorted(by: {$0.distanse < $1.distanse})
         for index in 0 ... kMeansNeedNumber {
             if teaAndCofeSort[index].type == .cofe {
                 cofeVotes += 1

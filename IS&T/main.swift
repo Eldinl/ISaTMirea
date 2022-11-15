@@ -7,6 +7,9 @@
 
 import Foundation
 
-var kMeans: () = KMeans().defineHuman(checkHuman: UndefiniteHuman(sleepHours: 7, work: 1, weight: 65, growth: 178, mireaDistance: 1.2))
+//var kMeans: () = KMeans().defineHuman(checkHuman: UndefiniteHuman(sleepHours: 7, work: 1, weight: 65, growth: 178, mireaDistance: 1.2))
 
+
+var vkGraph = VkGraph(userId: 0, accessToken: "")
+try await vkGraph.getData()
 
