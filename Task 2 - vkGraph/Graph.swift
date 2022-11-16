@@ -54,8 +54,8 @@ class Path {
 extension Path {
     var array: [Node] {
         var array: [Node] = [self.node]
-        
         var iterativePath = self
+        
         while let path = iterativePath.previousPath {
             array.append(path.node)
             
