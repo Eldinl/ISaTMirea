@@ -12,7 +12,9 @@ class VkGraph {
     var userId: Int
     var accessToken: String
     var networkService = NetworkService(baseURL: "http://api.vk.com/method/")
-    let graph = AdjacencyList<Int>()
+    var graph: [VkNode] = []
+    var connections: [Connection] = []
+    var winners: [Winner] = []
     
     init(userId: Int, accessToken: String) {
         self.userId = userId
@@ -39,9 +41,9 @@ class VkGraph {
     
     func getFriendByUserId(_ params: RequestVk) async throws -> ResponseVkFriends {
         let response = try await networkService.jsonRequest("friends.get",
-                                                           method: .get,
-                                                           parameters: params,
-                                                           responseType: ResponseVkFriends.self)
+                                                            method: .get,
+                                                            parameters: params,
+                                                            responseType: ResponseVkFriends.self)
         return response
         
         
@@ -50,9 +52,23 @@ class VkGraph {
     
     func makeGraph() {
         for friend in allFriends {
+            let nodeFriend = VkNode(id: friend.friend.id)
             for subFriend in friend.friends {
-                    graph.add(.undirected, from: graph.createVertex(data: friend.friend.id), to: graph.createVertex(data: subFriend.id))
+                let subFriend = VkNode(id: subFriend.id)
+                nodeFriend.connections.append(Connection(to: subFriend, weight: 1))
+            }
+            graph.append(nodeFriend)
+        }
+        for subGraph in graph {
+            var sourceNode = subGraph.connections[0]
+            for index in 1 ... subGraph.connections.count {
+                var destinationNode = subGraph.connections[index]
+                var path = shortestPath(source: sourceNode, destination: destinationNode)
+                let succession: [Int] = path?.array.reversed().flatMap({ $0 as? VkNode}).map({$0.id})
+                winners.append(Winner(id: succession, counts: 1))
             }
         }
+        let sortedWinners = winners.sorted(by: {$0.counts < $1.counts})
+        print(sortedWinners.first?.id.first)
     }
 }

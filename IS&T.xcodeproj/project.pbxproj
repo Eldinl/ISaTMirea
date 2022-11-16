@@ -16,12 +16,12 @@
 		B3BE54D1292015C800181ABD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE54D0292015C800181ABD /* ContentView.swift */; };
 		B3BE54D3292015C900181ABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3BE54D2292015C900181ABD /* Assets.xcassets */; };
 		B3BE54D6292015C900181ABD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3BE54D5292015C900181ABD /* Preview Assets.xcassets */; };
+		B3D4667229251F3B00D4FFCC /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D4667129251F3B00D4FFCC /* Graph.swift */; };
 		B3F64C9B2911A174007D114D /* VkGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F64C9A2911A174007D114D /* VkGraph.swift */; };
 		B3F64C9D2911A18A007D114D /* VkGraphModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F64C9C2911A18A007D114D /* VkGraphModels.swift */; };
 		B3F64CA02911A221007D114D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B3F64C9F2911A221007D114D /* Alamofire */; };
 		B3F64CA22911A244007D114D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F64CA12911A244007D114D /* NetworkService.swift */; };
 		B3F64CA42911A2D6007D114D /* NetworkModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F64CA32911A2D6007D114D /* NetworkModels.swift */; };
-		B3F64CA62912AAB9007D114D /* GraphModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F64CA52912AAB9007D114D /* GraphModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,11 +50,11 @@
 		B3BE54D2292015C900181ABD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3BE54D5292015C900181ABD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B3BE54D7292015C900181ABD /* Task_3___Schelling_s_model.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Task_3___Schelling_s_model.entitlements"; sourceTree = "<group>"; };
+		B3D4667129251F3B00D4FFCC /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		B3F64C9A2911A174007D114D /* VkGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkGraph.swift; sourceTree = "<group>"; };
 		B3F64C9C2911A18A007D114D /* VkGraphModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkGraphModels.swift; sourceTree = "<group>"; };
 		B3F64CA12911A244007D114D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		B3F64CA32911A2D6007D114D /* NetworkModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModels.swift; sourceTree = "<group>"; };
-		B3F64CA52912AAB9007D114D /* GraphModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +158,7 @@
 			children = (
 				B3F64C9A2911A174007D114D /* VkGraph.swift */,
 				B3F64C9C2911A18A007D114D /* VkGraphModels.swift */,
-				B3F64CA52912AAB9007D114D /* GraphModel.swift */,
+				B3D4667129251F3B00D4FFCC /* Graph.swift */,
 				B3F64CA12911A244007D114D /* NetworkService.swift */,
 				B3F64CA32911A2D6007D114D /* NetworkModels.swift */,
 			);
@@ -268,11 +268,11 @@
 				B31255C728EDDCC200AE8E5B /* KMeansModels.swift in Sources */,
 				B31255C928EDE0BB00AE8E5B /* GetData.swift in Sources */,
 				B3F64C9B2911A174007D114D /* VkGraph.swift in Sources */,
+				B3D4667229251F3B00D4FFCC /* Graph.swift in Sources */,
 				B3F64CA42911A2D6007D114D /* NetworkModels.swift in Sources */,
 				B304E33628DB65590022CC84 /* main.swift in Sources */,
 				B3F64C9D2911A18A007D114D /* VkGraphModels.swift in Sources */,
 				B3F64CA22911A244007D114D /* NetworkService.swift in Sources */,
-				B3F64CA62912AAB9007D114D /* GraphModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

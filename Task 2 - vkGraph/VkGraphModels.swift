@@ -44,9 +44,14 @@ struct FriendUI: Hashable {
 
 extension FriendAPI{
     func toUI() -> FriendUI {
-       FriendUI(id: id,
-                nickname: nickname,
-                firstName: firstName,
-                lastName: lastName)
+        FriendUI(id: id,
+                 nickname: nickname,
+                 firstName: firstName,
+                 lastName: lastName)
     }
+}
+
+struct Winner {
+    var id: [Int]
+    var counts: Int
 }

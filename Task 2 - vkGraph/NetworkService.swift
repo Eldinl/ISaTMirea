@@ -27,7 +27,7 @@ class NetworkService {
                                                         responseType: ResponseDataType.Type)
     async throws -> ResponseDataType
     where RequestDataType: Encodable, ResponseDataType: Decodable {
-
+        
         var headers: HTTPHeaders = []
         
         if let token = UserDefaults.standard.string(forKey: "Token") {
@@ -48,29 +48,29 @@ class NetworkService {
             .response
         
         switch response.result {
-        case .success(let value):
-            guard let data = value.response else {
-                throw ErrorModel(message: "Response Data is empty", errorStatus: .EMPTY_RESPONSE)
-            }
-            
-            return data
-            
-        case .failure(let error):
-            guard error.isResponseSerializationError else {
-                throw error
-            }
-            
-            let response = await request
-                .validate()
-                .serializingDecodable(ResponseDataType.self, decoder: decoder)
-                .response
-            
-            switch response.result {
             case .success(let value):
-                return value
+                guard let data = value.response else {
+                    throw ErrorModel(message: "Response Data is empty", errorStatus: .EMPTY_RESPONSE)
+                }
+                
+                return data
+                
             case .failure(let error):
-                throw error
-            }
+                guard error.isResponseSerializationError else {
+                    throw error
+                }
+                
+                let response = await request
+                    .validate()
+                    .serializingDecodable(ResponseDataType.self, decoder: decoder)
+                    .response
+                
+                switch response.result {
+                    case .success(let value):
+                        return value
+                    case .failure(let error):
+                        throw error
+                }
         }
     }
     
@@ -91,16 +91,16 @@ class NetworkService {
             return ErrorModel(message: "Not defined error", errorStatus: .NOT_DEFINED)
         }
         switch code {
-        case 204 ... 205:
-            return ErrorModel(message: "Response Data is empty", errorStatus: .EMPTY_RESPONSE)
-        case 500 ..< 600:
-            return ErrorModel(message: "Server error", code: code, errorStatus: .SERVER_ERROR)
-        case 401:
-            return ErrorModel(message: "Unauthorized", code: code, errorStatus: .UNAUTHORIZED)
-        case 413:
-            return ErrorModel(message: "Request is to large", code: code, errorStatus: .REQUEST_TO_LARGE)
-        default:
-            return ErrorModel(message: "Not defined error", code: code, errorStatus: .NOT_DEFINED)
+            case 204 ... 205:
+                return ErrorModel(message: "Response Data is empty", errorStatus: .EMPTY_RESPONSE)
+            case 500 ..< 600:
+                return ErrorModel(message: "Server error", code: code, errorStatus: .SERVER_ERROR)
+            case 401:
+                return ErrorModel(message: "Unauthorized", code: code, errorStatus: .UNAUTHORIZED)
+            case 413:
+                return ErrorModel(message: "Request is to large", code: code, errorStatus: .REQUEST_TO_LARGE)
+            default:
+                return ErrorModel(message: "Not defined error", code: code, errorStatus: .NOT_DEFINED)
         }
     }
 }
