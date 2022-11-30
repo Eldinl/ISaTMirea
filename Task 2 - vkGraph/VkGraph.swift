@@ -63,18 +63,18 @@ class VkGraph {
             graph.append(nodeFriend)
         }
         
-        for subGraph in graph {
-            var sourceNode = subGraph.connections[0]
-
-            for index in 1 ... subGraph.connections.count {
-                var destinationNode = subGraph.connections[index]
-                var path = shortestPath(source: sourceNode, destination: destinationNode)
-                let succession: [Int] = path?.array.reversed().flatMap({ $0 as? VkNode}).map({$0.id})
-                winners.append(Winner(id: succession, counts: 1))
-            }
-        }
-
-        let sortedWinners = winners.sorted(by: {$0.counts < $1.counts})
-        print(sortedWinners.first?.id.first)
+//        for subGraph in graph {
+//            var sourceNode = subGraph.connections[0]
+//
+//            for index in 1 ... subGraph.connections.count {
+//                var destinationNode = subGraph.connections[index]
+//                var path = shortestPath(source: sourceNode, destination: destinationNode)
+//                let succession: [Int] = path?.array.reversed().flatMap({ $0 as? VkNode}).map({$0.id})
+//                winners.append(Winner(id: succession, counts: 1))
+//            }
+//        }
+//
+//        let sortedWinners = winners.sorted(by: {$0.counts < $1.counts})
+//        print(sortedWinners.first?.id.first)
     }
 }

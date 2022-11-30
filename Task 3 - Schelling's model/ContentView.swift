@@ -14,10 +14,11 @@ struct Human: Hashable {
 }
 
 struct ContentView: View {
-    let edgeCount: Int = 20
+    let edgeCount: Int = 50
     var elementsCount: Int {
         edgeCount * edgeCount
     }
+    
     var field: [Human] {
         let redHumans = [Human](repeating: Human(id: UUID(), color: .red), count: Int(Double(elementsCount) * 0.45))
         let blueHumans = [Human](repeating: Human(id: UUID(), color: .blue), count: Int(Double(elementsCount) * 0.45))
@@ -26,7 +27,7 @@ struct ContentView: View {
         return field.shuffled()
     }
     
-    let colomns: [GridItem] = Array.init(repeating: GridItem(.fixed(7), spacing: 5), count: 20)
+    let colomns: [GridItem] = Array.init(repeating: GridItem(.fixed(7), spacing: 5), count: 50)
     
     var body: some View {
         ScrollView {
@@ -39,6 +40,7 @@ struct ContentView: View {
                             .frame(width: 7, height: 7)
                     }
                 }
+
             }
 //            .frame(width: 1000, height: 1000)
             .background(Color.black)
