@@ -36,9 +36,7 @@ struct ContentView: View {
                 }
             }
             Button {
-                withAnimation {
                     fields = .init(repeating: FiedType.empty, count: 9)
-                }
             } label: {
                 Text("Clear")
             }
