@@ -17,6 +17,7 @@
 		B336E7502937998900258382 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B336E74F2937998900258382 /* Assets.xcassets */; };
 		B336E7532937998900258382 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B336E7522937998900258382 /* Preview Assets.xcassets */; };
 		B336E75A29379A4400258382 /* FieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B336E75929379A4400258382 /* FieldView.swift */; };
+		B3730EFE29506A1A008720AB /* TicTacLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3730EFD29506A1A008720AB /* TicTacLogic.swift */; };
 		B3BE54CF292015C800181ABD /* SchellingModelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE54CE292015C800181ABD /* SchellingModelApp.swift */; };
 		B3BE54D1292015C800181ABD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE54D0292015C800181ABD /* ContentView.swift */; };
 		B3BE54D3292015C900181ABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3BE54D2292015C900181ABD /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		B336E7522937998900258382 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B336E7542937998900258382 /* TicTacToe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TicTacToe.entitlements; sourceTree = "<group>"; };
 		B336E75929379A4400258382 /* FieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldView.swift; sourceTree = "<group>"; };
+		B3730EFD29506A1A008720AB /* TicTacLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacLogic.swift; sourceTree = "<group>"; };
 		B3BD1EA1290053C400AFBE13 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		B3BE54CC292015C800181ABD /* Task 3 - Schelling's model.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Task 3 - Schelling's model.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3BE54CE292015C800181ABD /* SchellingModelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchellingModelApp.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				B336E74B2937998800258382 /* TicTacToeApp.swift */,
+				B3730EFD29506A1A008720AB /* TicTacLogic.swift */,
 				B336E74D2937998800258382 /* ContentView.swift */,
 				B336E75929379A4400258382 /* FieldView.swift */,
 				B336E74F2937998900258382 /* Assets.xcassets */,
@@ -354,6 +357,7 @@
 			files = (
 				B336E74E2937998800258382 /* ContentView.swift in Sources */,
 				B336E75A29379A4400258382 /* FieldView.swift in Sources */,
+				B3730EFE29506A1A008720AB /* TicTacLogic.swift in Sources */,
 				B336E74C2937998800258382 /* TicTacToeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

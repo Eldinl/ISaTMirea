@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    var logic: TicTacLogic
     @State var turn: Players = .X
     @State var fields: [FiedType] = .init(repeating: FiedType.empty, count: 9)
     
@@ -50,6 +51,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(logic: TicTacLogic())
     }
 }
